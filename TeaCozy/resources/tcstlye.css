@@ -1,0 +1,232 @@
+/*fonts 'n' stuff, i dunno how i came up with this, but it works*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  font-family: helvetica, sans-serif;
+  color: seashell;
+  text-align: center;
+  opacity: 0.9;
+  font-weight: bold;
+}
+
+html {
+  font-size: 22px;
+}
+
+/*standart reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*background*/
+body {
+  background-color: black;
+}
+
+/*Navbar*/
+header {
+  display: inline-flex;
+  justify-content: space-between;
+  position: fixed;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  z-index: 10;
+  background-color: black;
+  opacity: 0.9;
+}
+
+header img {
+  height: 50px;
+  margin: 10px;
+}
+
+#navlink {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+}
+
+#navlink a {
+  padding-left: 40px;
+}
+
+/* Section "Mission" */
+
+#missionimg {
+  position: relative;
+  background-image: url("./images/img-mission-background.jpg");
+  height: 700px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 70px;
+}
+
+#missionblock h2,
+#missionblock h4 {
+  position: relative;
+  bottom: 350px;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  padding: 10px;
+  opacity: 0.9;
+}
+
+/* Section "Tea of the Month" */
+#teaofthemonth {
+  padding-top: 100px;
+  margin-top: -50px; /*I did this so when you click "Featured tea" you will scroll a bit higher so the fixed navigation bar doesnt overlap with the h2. The true spacing to the above element stays (100px-50px=)50px as intended*/
+}
+
+#teaofthemonth h2 {
+  padding-bottom: 20px;
+}
+
+#totmcont {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  flex-wrap: wrap;
+}
+
+.totmitem img {
+  height: 200px;
+  width: 300px;
+  margin: 15px;
+}
+
+/* Section "Locations" */
+/*im really struggling with this one, oh my god. This is my 2nd try*/
+
+.locationsitem {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  margin: 15px 20px;
+  opacity: 0.9;
+}
+
+.locationsitem h3,
+.locationsitem p {
+  margin: 20px 0px;
+}
+
+#locations {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/img-locations-background.jpg");
+  height: 500px;
+  width: 100%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#locationscont {
+  display: flex;
+  flex-flow: row;
+}
+
+/*Section "Contact Info*/
+#contactinfo {
+  height: 200px;
+  text-align: center;
+}
+
+#contactinfo h1 {
+  margin: 10px 0px 25px 0px;
+}
+
+#contactinfo h5 {
+  padding: 15px;
+}
+
+/* Footer */
+footer h5 {
+  float: left;
+  text-align: left;
+  margin: 0 0 25px 20px;
+}
+
+footer h4 {
+  float: right;
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+footer h4:hover {
+  color: white;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.034);
+}
+/*
+USE THIS TO VISUALIZE THE BOXES, IT HELPS A LOT
+
+#locationscont {
+  background-color: rgba(255, 0, 0, 0.377);
+}
+
+#bayside {
+  background-color: rgba(0, 0, 255, 0.253);
+}
+
+#downtown {
+  background-color: rgba(0, 0, 0, 0.116);
+}
+
+#oakdale {
+  background-color: rgba(255, 255, 0, 0.212);
+} 
+*/
+
+/*
+THIS WAS MY FIRST TRY, DIDNT GO THAT WELL
+.locationsbox {
+  display: inline-flex;
+  background-color: rgba(255, 0, 0, 0.274);
+  opacity: 1;
+  height: 300px;
+  width: 300px;
+  margin: 15px 40px;
+  top: 15px;
+}
+
+#locationscont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  position: relative;
+  background-image: url("./images/img-locations-background.jpg");
+  background-repeat: no-repeat;
+  height: 500px;
+  background-position: center;
+  margin-top: 50px;
+}
+
+#locationscont h1 {
+  position: absolute;
+  width: 1200px;
+  margin: 15px;
+  top: 60px;
+}
+*/
